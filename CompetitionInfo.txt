@@ -1,0 +1,37 @@
+Competition Info
+You may work in teams and collaborate
+Competition ends at 7PM
+Submission Guidelines:
+Turn in a CSV column holding classification prediction 0 or 1
+Data Set Information:
+https://archive.ics.uci.edu/ml/datasets/Drug+consumption+%28quantified%29#
+Abstract: Classify type of drug consumer by personality data Data Set Characteristics: Multivariate Number of Instances: 1885 Area: Social Attribute Characteristics: Real Number of Attributes: 32 Associated Tasks: Classification Missing Values? N/A
+The dataset comes from a data frame containing information about drug use. The classes are 0, not a user, and 1, user. Your job is to predict these classes for each observation.
+The categorical data has been preprocessed for us so that all values are of type float. There are no missing values. Headers are included in the CSV's but the code below omits the headers.
+Files
+x_train
+has columns
+'id', (not a predictor, for reference only)
+'age',
+'gender',
+'education',
+'country',
+'ethnicity',
+'neuroticism',
+'extraversion',
+'openness',
+'agreeableness',
+'conscientiousness',
+'impulsiveness',
+'sensation_seeing','
+shape (1413, 13)
+y_train
+has one column containing classifications on the x_train
+values 0 or 1, corresponding to not a user or user, respectively.
+shape (1413,)
+use y_train and x_train this data to train your model
+x_test
+has the same columns as x_train
+once you have made your model, use this data to make your predictions (y_test)
+then follow the submission guidelines above
+shape (472, 13)
